@@ -1,0 +1,222 @@
+---
+title: "影响搜索结果中的标题链接"
+source: https://developers.google.com/search/docs/appearance/title-link?hl=zh_CN
+slug: search__docs__appearance__title-link
+path: /search/docs/appearance/title-link
+---
+
+# 影响搜索结果中的标题链接
+
+> 来源: https://developers.google.com/search/docs/appearance/title-link?hl=zh_CN
+
+-  [ 首页 ](https://developers.google.com/?hl=zh-cn)
+-
+
+ [ Search Central ](https://developers.google.com/search?hl=zh-cn)
+-
+
+ [ Documentation ](https://developers.google.com/search/docs?hl=zh-cn)
+
+# 影响搜索结果中的标题链接
+
+ **“标题链接”是 Google 搜索及其他 Google 产品和服务（例如 Google 新闻）上链接到相应网页的搜索结果的标题。Google 会根据许多不同的信息自动确定标题链接，但您可以按照[影响标题链接的最佳实践](#page-titles)操作，指明您的偏好。
+
+##  影响标题链接的最佳实践
+
+标题链接非常重要，它可以让用户快速了解某条搜索结果的内容以及该结果与其查询相关的原因。它常常是用户在决定点击哪个结果时参考的主要信息，因此为您的网页提供高品质的标题文字非常重要。
+
+- 确保**在 `<title>` 元素中为您网站上的每个网页分别指定一个标题**。
+- 为 `<title>` 元素编写**简练的描述性**文字。避免使用不明确的描述，例如对首页使用“首页”，或对某人的个人资料使用“个人资料”。
+ 此外，请避免 `<title>` 元素中出现不必要的过长或冗长的文字。 虽然 `<title>` 元素没有长度限制，但标题链接会根据需要在 Google 搜索结果中被截断，通常是为了适应设备宽度。
+- 避免**关键字堆砌**。在 `<title>` 元素中包含几个描述性词汇有时会有帮助，但请勿多次重复使用相同的字词或短语。“Foobar, foo bar, foobars, foo bars”这样的标题文字对用户并没有帮助，而且此类[关键字堆砌](https://developers.google.com/search/docs/essentials/spam-policies?hl=zh-cn#keyword-stuffing)可能会导致 Google 和用户将您的结果视为垃圾内容。
+- 避免 **`<title>` 元素中出现重复或样板化的文字**。网站上每个网页的 `<title>` 元素中都必须有独特的文字来描述网页内容。例如，将商业网站每个网页的标题都写成“出售便宜商品”，就会导致用户无法区分两个网页。如果 `<title>` 元素中的标题很长并且只有一小部分有变化（“样板”标题），那么也不合适；例如，所有网页的共用 `<title>` 元素中包含“乐队名称 - 查看视频、歌词、海报、专辑、评价和音乐会”这样的文字，这种标题就包含大量没有参考价值的文字。
+
+ 一种解决方法是动态更新 `<title>` 元素，以更好地体现网页的实际内容。例如，只有在特定网页包含视频或歌词时才使用字词“视频”“歌词”。
+
+- **简明扼要地在标题中宣传品牌**。网站首页的 `<title>` 元素中可以包含一些有关网站的额外信息，例如：
+
+>  <title>ExampleSocialSite，人们在这里相识相知</title>
+
+ 但是，如果在网站的每个网页的 `<title>` 元素中都显示该文字，就会在系统针对同一查询返回网站的多个网页时显得重复和罗嗦。在这种情况下，您不妨考虑仅在每个 `<title>` 元素的开头或末尾添加[网站名称](https://developers.google.com/search/docs/appearance/site-names?hl=zh-cn)，并用连字符、冒号或竖线等分隔符将其与文字的其余部分隔开，如下所示：
+
+>  <title>ExampleSocialSite：注册新账号。</title>
+
+- **明确指出哪些文字是网页的主要标题**。Google [在创建标题链接时](#sources)会查看各种信息，包括主要视觉标题、标题元素以及其他大型醒目文字。如果多个标题具有相同的视重和显眼程度，可能会让人困惑。请确保您的主要标题有别于网页上的其他文字，并在网页上的最显眼处突出显示（例如，使用更大的字体，将标题放在网页上的第一个可见 `<h1>` 元素中，等等）。
+- **请注意关于禁止搜索引擎**抓取网页的问题。在网站上使用 [robots.txt](https://developers.google.com/search/reference/robots_txt?hl=zh-cn) 协议可以阻止 Google 抓取网页，但不一定能阻止网页被编入索引。例如，如果 Google 通过其他网站上的链接发现了您的网页，可能就会将您的网页编入索引。如果我们无法访问您网页上的内容，就会依赖页外内容生成标题链接，例如来自其他网站的定位文字。您可以使用 [`noindex` 规则](https://developers.google.com/search/docs/crawling-indexing/block-indexing?hl=zh-cn)禁止 Google 将某个网址编入索引。
+- **使用与网页上主要内容相同的语言和书写系统（即指定语言的文字或字母系统）**。例如，如果网页是用印地语编写的，请务必同时用印地语编写 `<title>` 元素（请勿用英语编写标题文字或将标题音译为拉丁字符）。
+ Google 会尝试显示与网页主要语言和书写系统相符的标题链接。 如果 Google 确定 `<title>` 元素与网页主要内容的书写系统或语言不符，我们就可能会选择其他文字作为标题链接。
+- **避免在 `<title>` 元素中添加航班价格信息**。在为航班页面生成标题链接时，我们的系统可能不会显示价格信息。这是因为航班价格可能会快速变化（有时每几分钟就会变化一次），导致标题链接中显示的价格可能与着陆页上的实际价格不一致。
+
+## Google 搜索中的标题链接是如何创建的
+
+Google 在 Google 搜索结果页上生成标题链接的过程是完全自动的，且会同时考虑网页内容及网络上对此网页的引用。标题链接的目标是为了充分展现和描述每条搜索结果。
+
+Google 搜索会根据以下信息自动确定标题链接：
+
+- `<title>` 元素中的内容
+- 网页上显示的主要视觉标题
+- 标题元素，例如 `<h1>` 元素
+- `og:title``meta` 标记中的内容
+- 经过样式处理后变得更大更醒目的其他内容
+- 网页中所含的其他文字
+- 网页上的定位文字
+- 指向网页的链接中的文字
+- [`WebSite` 结构化数据](https://developers.google.com/search/docs/appearance/site-names?hl=zh-cn#how-to-add-structured-data)
+
+ 请注意，Google 必须重新抓取并重新处理网页，才能发现上述信息的相关更新，此过程用时可能会从几天到几周不等。如果您做出了更改，可以[请求 Google 重新抓取您的网页](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl?hl=zh-cn)。
+
+ 尽管我们无法手动更改各个网站的标题链接，但我们一直在努力增强它们的相关性。您可按以下[最佳实践](#page-titles)操作，帮助改善我们为您的网页显示的标题链接的质量。
+
+## 常见问题以及 Google 如何应对这些问题
+
+**为什么搜索结果中的标题链接可能与网页的 `<title>` 元素或主要标题不同**：如果我们检测到[网页上存在问题](#issues)，我们可能会尝试根据锚标记、网页中的文字或其他[来源](#sources)生成经过改进的标题链接。
+
+ 以下是搜索结果中的标题链接存在的最常见问题。为避免这些问题，请遵循[影响标题链接的最佳实践](#page-titles)。
+
+常见问题
+
+###  `<title>` 元素不完整
+
+ 缺少部分标题文字。例如：
+
+>  <title>| 网站名称</title>
+
+ Google 搜索会查看标头元素中的信息或网页上的其他大型醒目文字来生成标题链接：
+
+> 商品名称 | 网站名称
+
+###  `<title>` 元素已过时
+
+ 如果网站年复一年地使用同一个网页呈现周期性信息，但没有更新 `<title>` 元素来反映最新日期，就会发生此问题。例如：
+
+>  <title>2020 年录取标准 - 优秀大学</title>
+
+ 在此示例中，该网页包含一个内容为“2021 年录取标准”的大型醒目标题，但 `<title>` 元素未更新为最新日期。Google 搜索可能会检测到这种不一致的情况，并在标题链接中使用网页中可见标题的正确日期：
+
+> 2021 年录取标准 - 优秀大学
+
+###  `<title>` 元素不准确
+
+ 当 `<title>` 元素无法准确反映网页内容时，就会发生此问题。例如，某个网页包含动态内容，并具有以下 `<title>` 元素：
+
+>  `<title>`大型毛绒动物玩具、泰迪熊、北极熊 - 网站名称</title>
+
+ Google 搜索会尝试确定 `<title>` 元素能否准确反映网页内容。如果 Google 搜索确定网页标题没有反映网页内容，可能会修改标题链接，以便为用户提供更好的帮助。例如：
+
+> 毛绒动物玩具 - 网站名称
+
+###  `<title>` 元素中的微样板文字
+
+ 当网站的一部分网页的 `<title>` 元素中有重复样板文字时，就会发生此问题。例如，某个电视网站有多个网页具有相同的 `<title>` 元素，该元素省略了季号，因此不清楚每个网页对应哪个剧季。这会生成重复的 `<title>` 元素，如下所示：
+
+>  <title>我所认为的精彩电视节目</title>
+
+>  <title>我所认为的精彩电视节目</title>
+
+>  <title>我所认为的精彩电视节目</title>
+
+ Google 搜索可以检测到在大型醒目标题文字中使用的季号，并在标题链接中插入季号：
+
+> 第 1 季 - 我所认为的精彩电视节目
+
+> 第 2 季 - 我所认为的精彩电视节目
+
+> 第 3 季 - 我所认为的精彩电视节目
+
+###  主要标题不明确
+
+ 当有多个大型醒目标题时，不清楚哪些文字是网页的主要标题。例如，某个网页有两个或更多个标题使用相同的样式或标题级别。如果 Google 搜索检测到多个大型醒目标题，可以用第一个标题作为标题链接的文字。请确保您的主要标题有别于网页上的其他文字，并在网页上的最显眼处突出显示（例如，使用更大的字体，将标题放在网页上的第一个可见 `<h1>` 元素中，等等）。
+
+###  `<title>` 元素中使用的书写系统或语言不一致
+
+ 当 `<title>` 元素中文字的书写系统或语言与网页上主要文字的书写系统或语言不一致时。例如，网页是用印地语编写，但标题包含英语文字或音译为拉丁字符。如果 Google 检测到不匹配，则可能会生成与主要内容更匹配的标题链接。请务必确保脚本和语言与网页最显眼的内容相符。
+
+###  `<title>` 元素中的[网站名称](https://developers.google.com/search/docs/appearance/site-names?hl=zh-cn)重复
+
+ 对于网域级网站名称，如果标题链接中的网站名称与[已显示在搜索结果中的网站名称](https://developers.google.com/search/docs/appearance/site-names?hl=zh-cn)重复，Google 可能会忽略标题链接中的网站名称。
+
+##  提交关于标题链接的反馈
+
+如果您看到自己的网页出现在搜索结果中但标题链接已被修改，请检查您的网页是否存在 Google 据以调整的[某种问题](#issues)。如果没有问题，请考虑搜索结果中的标题链接是否更贴近查询内容。 如需讨论网页的标题链接并获取来自其他网站所有者的网页反馈，请加入我们的 [Google 搜索中心帮助社区](https://support.google.com/webmasters/community?hl=zh-cn)。
+
+如未另行说明，那么本页面中的内容已根据[知识共享署名 4.0 许可](https://creativecommons.org/licenses/by/4.0/)获得了许可，并且代码示例已根据 [Apache 2.0 许可](https://www.apache.org/licenses/LICENSE-2.0)获得了许可。有关详情，请参阅 [Google 开发者网站政策](https://developers.google.com/site-policies?hl=zh-cn)。Java 是 Oracle 和/或其关联公司的注册商标。
+
+最后更新时间 (UTC)：2025-12-18。
+
+     [[["易于理解","easyToUnderstand","thumb-up"],["解决了我的问题","solvedMyProblem","thumb-up"],["其他","otherUp","thumb-up"]],[["没有我需要的信息","missingTheInformationINeed","thumb-down"],["太复杂/步骤太多","tooComplicatedTooManySteps","thumb-down"],["内容需要更新","outOfDate","thumb-down"],["翻译问题","translationIssue","thumb-down"],["示例/代码问题","samplesCodeIssue","thumb-down"],["其他","otherDown","thumb-down"]],["最后更新时间 (UTC)：2025-12-18。"],[],["To influence title links in search results, ensure each page has a unique, descriptive, and concise title within the `\u003ctitle\u003e` element. Avoid keyword stuffing, boilerplate text, and half-empty titles. Brand titles concisely and ensure they match the page's primary language and writing system. Make the main page title visually distinct. Google may alter title links if issues are detected, such as obsolete or inaccurate titles. Regularly update your content and titles.\n"]]
+
+-  [ LinkedIn  ](https://www.linkedin.com/showcase/googlesearchcentral/)
+在 LinkedIn 上加入我们
+
+-  [ YouTube  ](https://www.youtube.com/channel/UCWf2ZlNsCGDS89VBF_awNvA?hl=zh-cn)
+观看我们的视频
+
+-  [ 博客  ](https://feeds.feedburner.com/blogspot/amDG)
+订阅我们的 RSS Feed
+
+-  [ 播客  ](https://pod.link/1512522198)
+聆听 Search Off the Record（查无记录）
+
+-  [ X (Twitter)  ](https://twitter.com/googlesearchc)
+在 X (Twitter) 上加入我们
+
+-
+
+### 获取支持
+
+  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community)
+  -  [ 向“咨询交流时间”活动提交问题 ](/search/help/office-hours)
+  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](/search/help/report-quality-issues)
+  -  [ 更多的支持资源 ](/search/help)
+
+-
+
+### 资源
+
+  -  [ 您需要 SEO 吗？ ](/search/docs/fundamentals/get-on-google)
+  -  [ SEO 新手指南 ](/search/docs/fundamentals/seo-starter-guide)
+  -  [ 搜索系统的状态 ](https://status.search.google.com)
+  -  [ Search Console 文档 ](https://support.google.com/webmasters)
+  -  [ 案例研究 ](/search/case-studies/overview)
+
+-
+
+### 工具
+
+  -  [ Search Console ](https://search.google.com/search-console)
+  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results)
+  -  [ PageSpeed Insights ](https://pagespeed.web.dev)
+  -  [ AMP 测试 ](https://search.google.com/test/amp)
+
+  [](https://developers.google.com/?hl=zh-cn)
+
+-  [ Android ](//developer.android.com?hl=zh-cn)
+-  [ Chrome ](//developer.chrome.com/home?hl=zh-cn)
+-  [ Firebase ](//firebase.google.com?hl=zh-cn)
+-  [ Google Cloud Platform ](//cloud.google.com?hl=zh-cn)
+-  [ Google AI ](//ai.google.dev/?hl=zh-cn)
+-  [ 所有产品 ](https://developers.google.com/products?hl=zh-cn)
+
+-  [ 条款 ](https://developers.google.com/terms/site-terms?hl=zh-cn)
+-  [ 隐私权政策 ](//policies.google.com/privacy?hl=zh-cn)
+-  [ Manage cookies ](#)
+
+-  [English]()
+-  [Deutsch]()
+-  [Español]()
+-  [Español – América Latina]()
+-  [Français]()
+-  [Indonesia]()
+-  [Italiano]()
+-  [Polski]()
+-  [Português – Brasil]()
+-  [Tiếng Việt]()
+-  [Türkçe]()
+-  [Русский]()
+-  [العربيّة]()
+-  [हिंदी]()
+-  [ภาษาไทย]()
+-  [中文 – 简体]()
+-  [中文 – 繁體]()
+-  [日本語]()
+-  [한국어]()

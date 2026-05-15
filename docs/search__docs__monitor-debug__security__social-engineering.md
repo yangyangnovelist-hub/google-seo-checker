@@ -1,0 +1,200 @@
+---
+title: "社会工程学（钓鱼式攻击和欺骗性网站）"
+source: https://developers.google.com/search/docs/monitor-debug/security/social-engineering?hl=zh_CN
+slug: search__docs__monitor-debug__security__social-engineering
+path: /search/docs/monitor-debug/security/social-engineering
+---
+
+# 社会工程学（钓鱼式攻击和欺骗性网站）
+
+> 来源: https://developers.google.com/search/docs/monitor-debug/security/social-engineering?hl=zh_CN
+
+-  [ 首页 ](https://developers.google.com/?hl=zh-cn)
+-
+
+ [ Search Central ](https://developers.google.com/search?hl=zh-cn)
+-
+
+ [ Documentation ](https://developers.google.com/search/docs?hl=zh-cn)
+
+# 社会工程学（钓鱼式攻击和欺骗性网站）
+
+社会工程学内容是指会诱使访问者执行某些危险操作的内容，例如诱使访问者透露机密信息或下载软件。如果 Google 检测到您的网站包含社会工程学内容，Chrome 浏览器便可能会在访问者浏览您的网站时显示“您要访问的是诈骗网站”警告。您可以在 Search Console 的“安全问题”报告中查看自己的网站上是否有网页涉嫌包含社会工程学攻击内容。
+
+[打开“安全问题”报告](https://search.google.com/search-console/security-issues?hl=zh-cn)
+
+## 什么是社会工程学攻击？
+
+**社会工程学攻击是指诱使网络用户在线执行某些危险操作。
+
+社会工程学攻击有多种类型：
+
+- **[钓鱼式攻击](https://support.google.com/websearch/answer/106318?hl=zh-cn)：**这类网站会诱使用户透露个人信息（例如密码、电话号码或社会保障号）。此类内容会效仿可信实体（例如浏览器、操作系统、银行或政府机构）的行为或外观。
+- **欺骗性内容：**这类内容会试图诱使您做出一些您只会对可信实体做出的行为（例如透露密码、致电技术支持部门或下载软件）；也可能会含有谎称设备软件不是最新版本的广告，并提示用户安装垃圾软件。
+- **标识不明的第三方服务：****第三方是代表其他实体运营网站或服务的提供商。如果您（第三方）代表其他方（第一方）运营网站，而未明确说明双方关系，则这种行为可能会被标记为社会工程学行为。例如，如果您（第一方）运营着一个慈善机构网站，并通过某捐赠管理网站（第三方）来处理您网站的募捐事宜，那么该捐赠网站必须明确说明它是代表您的慈善机构网站的第三方平台，否则这可能会被视为社会工程学行为。
+
+如果网页经常会从事社会工程学行为，那么 [Google 安全浏览功能](https://www.google.com/transparencyreport/safebrowsing?hl=zh-cn)会在网络用户访问这类网页之前发出警告，以免他们遭到攻击。
+
+在下列任一情况下，网页都会被视为从事社会工程学行为：
+
+- 效仿可信实体（例如，您自己的设备/浏览器或网站本身）的行为或外观。
+- 企图诱使您做出一些您只会对可信实体做出的行为，例如透露密码、致电技术支持部门或下载软件。
+
+### 内嵌内容中的社会工程学攻击
+
+社会工程学内容也可能会出现于其他方面均无害的网站的内嵌内容中（通常会在广告中显示）。内嵌式社会工程学内容违反了托管页面的政策。
+
+有时，用户会在托管页面上看到内嵌式社会工程学内容，详见[示例](#example)部分。在另一些情况下，托管网站虽然不会直接显示广告，但会通过弹出式窗口、背后弹出式窗口或其他类型的重定向将用户转到社会工程学页面。在这两种情形下，此类内嵌式社会工程学内容都会违反托管页面的相关政策。
+
+## 但我没有参与社会工程学攻击！
+
+黑客可能会通过嵌入到网页中的资源（例如图片、其他第三方组件或广告）植入欺骗性社会工程学内容。此类欺骗性内容可能会诱使网站访问者下载[垃圾软件](https://www.google.com/about/unwanted-software-policy.html?hl=zh-cn)。
+
+此外，**黑客**可能会窃取对正常网站的控制权，并利用这些网站托管或传播社会工程学内容。黑客还可能会更改网站内容或向网站添加额外网页，目的通常是诱使访问者透露个人信息，例如信用卡号码。您可以查看 Search Console 中的“安全问题”报告，了解自己的网站是否已被认定为托管或传播社会工程学内容的网站。
+
+如果您认为自己的网站遭到了黑客攻击，请参见我们的[网站遭到入侵的相关帮助](https://web.dev/articles/hacked?hl=zh-cn)。
+
+## 社会工程学攻击违规示例
+
+### 欺骗性内容示例
+
+以下是一些从事社会工程学行为的网页示例：
+
+ 欺骗性弹出式窗口，企图诱使用户安装恶意软件。
+
+ 欺骗性弹出式窗口，声称能帮助用户更新浏览器
+
+ 假冒 Google 登录页面
+
+请注意欺骗性网址。类似的其他钓鱼式攻击网站可能会诱使您透露其他个人信息，例如信用卡信息。钓鱼式攻击网站可能看起来与真实网站无异，因此请务必查看地址栏，确认网址正确无误，并且以 `https://` 开头。
+
+### 欺骗性广告示例
+
+以下是一些嵌入式广告中的欺骗性内容示例。这些广告看似网页的部分内容，并不像是广告。
+
+ 欺骗性弹出式窗口，声称用户的软件已过期。
+
+ 欺骗性弹出式窗口，声称由 FLV 开发者提供
+
+ 伪装成页面操作按钮的广告。
+
+## 如何解决上述问题
+
+如果您的网站被标记为含有社会工程学内容（欺骗性内容），请确保网页未从事任何相关[行为](#examples)，然后执行以下步骤：
+
+1.  **在 Search Console 中进行检查**。
+
+  -  [在 Search Console 中验证您对自己网站的所有权](https://support.google.com/webmasters/answer/2739618?hl=zh-cn)，并确认没有多出任何新的可疑所有者。
+  -
+
+ 查看[“安全问题”报告](https://search.google.com/search-console/security-issues?hl=zh-cn)，看看您的网站是否被列为包含欺骗性内容（这是用于报告社会工程学内容的术语）的网站。如果报告包含一些被标记的示例网址，请访问报告中列出的部分网址，但请不要使用您网站的服务器所在网络内的计算机（如果狡猾的黑客认为访问者是网站所有者的话，他们可能会暂停其攻击行为）。
+
+ 如果报告不含示例网址，并且您确信您的网站不包含社会工程学内容（欺骗性内容），便可在“安全问题”报告中[提交安全审核请求](https://support.google.com/webmasters/answer/9044101?hl=zh-cn#fix)。
+
+2.  **移除欺骗性内容**。确保您网站的所有网页都不包含欺骗性内容。如果您认为安全浏览功能对某个网页的分类有误，请[报告该问题](https://www.google.com/safebrowsing/report_error/?hl=zh-cn)。
+3.  **检查您的网站中包含的第三方资源**。确保您网站的网页上没有任何欺骗性的广告、图片或其他嵌入式第三方资源。
+
+  - 请注意，广告网络可能会轮播在您网站的网页上展示的广告。因此，您可能需要刷新几次网页，然后才能确定其中是否有任何社会工程学广告。
+  - 某些广告在移动设备和桌面设备上可能会以不同的方式展示。您可以使用[网址检查工具](https://support.google.com/webmasters/answer/9012289?hl=zh-cn)在移动版视图和桌面版视图中查看您的网站。
+  - 请检查您在网站中使用的所有第三方服务（例如付款服务）是否遵循了[第三方服务指南](#third-party-guidelines)。
+
+4.  **提交审核请求**。从您的网站中移除所有社会工程学内容后，您可以在“安全问题”报告中[提交安全审核请求](https://support.google.com/webmasters/answer/9044101?hl=zh-cn#fix)。审核过程可能需要几天的时间才能完成。
+
+### 第三方服务指南
+
+如果您的网站含有第三方服务，我们建议您满足以下条件，以免网站被标记为包含社会工程学内容：
+
+- 在每个网页上，第三方网站都明确包含第三方品牌，确保用户了解网站的运营者是谁。例如，您可以将第三方品牌添加到页面顶部。
+- 在包含第一方品牌信息的每个页面上，明确说明第一方和第三方之间的关系，并提供详情链接。例如，页面可以显示以下声明：
+
+*此服务由 Example.com 代表 Example.charities.com 进行托管。了解详情。*
+
+为了确保网站具有良好的易用性，原则上要做到：无论用户单独浏览哪个网页，都能知道该网页属于哪个网站以及第一方与第三方之间的关系。
+
+ **最佳实践：**如果您需要第三方为您的网站提供基本的支持服务，最佳实践是聘用符合业界标准的第三方。例如，若要管理您网站上的用户身份验证，请使用 [OAuth](https://oauth.net/)，而不是自行管理身份验证。
+
+ 如果您是 Search Console 用户，并且您的网站存在持续出现或无法解决的安全问题，请告诉我们。
+
+[报告安全问题](https://support.google.com/webmasters/contact/report_security_issues?hl=zh-cn)
+
+如未另行说明，那么本页面中的内容已根据[知识共享署名 4.0 许可](https://creativecommons.org/licenses/by/4.0/)获得了许可，并且代码示例已根据 [Apache 2.0 许可](https://www.apache.org/licenses/LICENSE-2.0)获得了许可。有关详情，请参阅 [Google 开发者网站政策](https://developers.google.com/site-policies?hl=zh-cn)。Java 是 Oracle 和/或其关联公司的注册商标。
+
+最后更新时间 (UTC)：2025-12-18。
+
+     [[["易于理解","easyToUnderstand","thumb-up"],["解决了我的问题","solvedMyProblem","thumb-up"],["其他","otherUp","thumb-up"]],[["没有我需要的信息","missingTheInformationINeed","thumb-down"],["太复杂/步骤太多","tooComplicatedTooManySteps","thumb-down"],["内容需要更新","outOfDate","thumb-down"],["翻译问题","translationIssue","thumb-down"],["示例/代码问题","samplesCodeIssue","thumb-down"],["其他","otherDown","thumb-down"]],["最后更新时间 (UTC)：2025-12-18。"],[],["Social engineering tricks users into dangerous actions, like revealing personal data or downloading harmful software. This can occur through phishing, deceptive content, or unclear third-party services. Websites with such content may trigger browser warnings. Site owners should check the Security Issues report in Search Console for violations. Actions include removing deceptive content, ensuring third-party resources are not deceptive, and requesting a security review. Clear labeling of third-party involvement is crucial to avoid being flagged.\n"]]
+
+-  [ LinkedIn  ](https://www.linkedin.com/showcase/googlesearchcentral/)
+在 LinkedIn 上加入我们
+
+-  [ YouTube  ](https://www.youtube.com/channel/UCWf2ZlNsCGDS89VBF_awNvA?hl=zh-cn)
+观看我们的视频
+
+-  [ 博客  ](https://feeds.feedburner.com/blogspot/amDG)
+订阅我们的 RSS Feed
+
+-  [ 播客  ](https://pod.link/1512522198)
+聆听 Search Off the Record（查无记录）
+
+-  [ X (Twitter)  ](https://twitter.com/googlesearchc)
+在 X (Twitter) 上加入我们
+
+-
+
+### 获取支持
+
+  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community)
+  -  [ 向“咨询交流时间”活动提交问题 ](/search/help/office-hours)
+  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](/search/help/report-quality-issues)
+  -  [ 更多的支持资源 ](/search/help)
+
+-
+
+### 资源
+
+  -  [ 您需要 SEO 吗？ ](/search/docs/fundamentals/get-on-google)
+  -  [ SEO 新手指南 ](/search/docs/fundamentals/seo-starter-guide)
+  -  [ 搜索系统的状态 ](https://status.search.google.com)
+  -  [ Search Console 文档 ](https://support.google.com/webmasters)
+  -  [ 案例研究 ](/search/case-studies/overview)
+
+-
+
+### 工具
+
+  -  [ Search Console ](https://search.google.com/search-console)
+  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results)
+  -  [ PageSpeed Insights ](https://pagespeed.web.dev)
+  -  [ AMP 测试 ](https://search.google.com/test/amp)
+
+  [](https://developers.google.com/?hl=zh-cn)
+
+-  [ Android ](//developer.android.com?hl=zh-cn)
+-  [ Chrome ](//developer.chrome.com/home?hl=zh-cn)
+-  [ Firebase ](//firebase.google.com?hl=zh-cn)
+-  [ Google Cloud Platform ](//cloud.google.com?hl=zh-cn)
+-  [ Google AI ](//ai.google.dev/?hl=zh-cn)
+-  [ 所有产品 ](https://developers.google.com/products?hl=zh-cn)
+
+-  [ 条款 ](https://developers.google.com/terms/site-terms?hl=zh-cn)
+-  [ 隐私权政策 ](//policies.google.com/privacy?hl=zh-cn)
+-  [ Manage cookies ](#)
+
+-  [English]()
+-  [Deutsch]()
+-  [Español]()
+-  [Español – América Latina]()
+-  [Français]()
+-  [Indonesia]()
+-  [Italiano]()
+-  [Polski]()
+-  [Português – Brasil]()
+-  [Tiếng Việt]()
+-  [Türkçe]()
+-  [Русский]()
+-  [العربيّة]()
+-  [हिंदी]()
+-  [ภาษาไทย]()
+-  [中文 – 简体]()
+-  [中文 – 繁體]()
+-  [日本語]()
+-  [한국어]()
