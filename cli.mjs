@@ -49,9 +49,9 @@ Options:
   --quiet             Only print failures + warnings
 
 Examples:
-  node scripts/seo-checker/cli.mjs https://packoasis.com/us/
-  node scripts/seo-checker/cli.mjs public/index.html --filter=meta,schema
-  node scripts/seo-checker/cli.mjs https://packoasis.com/us/ --json > report.json
+  seo-check https://example.com/
+  seo-check ./dist/index.html --filter=meta,schema
+  seo-check https://example.com/ --json > report.json
 `);
 }
 
