@@ -79,7 +79,10 @@ Options:
     else if (a === '--json') jsonOut = true;
     else if (a === '--titles') titlesOnly = true;
     else if (a.startsWith('--section=')) section = a.slice(10);
-    else if (!a.startsWith('--')) terms.push(a);
+    else if (!a.startsWith('--')) {
+      // Split each positional arg on whitespace so `"a b c"` becomes 3 terms.
+      for (const t of a.split(/\s+/)) if (t) terms.push(t);
+    }
   }
   if (!terms.length) { console.error('需要至少 1 个关键词'); process.exit(1); }
 
