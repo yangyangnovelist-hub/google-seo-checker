@@ -445,15 +445,17 @@ export const RULES = [
     id: 'links-target-blank-rel',
     category: 'links',
     severity: 'info',
-    title: 'target="_blank" 的链接应有 rel="noopener"',
+    title: 'target="_blank" 的链接建议有 rel="noopener"',
     source: `${D}/crawling-indexing/qualify-outbound-links`,
+    // 现代浏览器（Chromium 88+, Safari 12.1+, Firefox 79+）已对 target=_blank
+    // 默认应用 noopener；显式声明仍是好习惯但严重度降为 info（不阻塞 CI）。
     check: ({ anchors }) => {
       const blanks = anchors.filter(a => a.target === '_blank');
       const bad = blanks.filter(a => !/noopener/i.test(a.rel || ''));
       if (!blanks.length) return { status: 'pass' };
-      return bad.length
-        ? { status: 'warn', message: `${bad.length}/${blanks.length} 个 target="_blank" 缺少 rel="noopener"` }
-        : { status: 'pass' };
+      if (!bad.length) return { status: 'pass' };
+      // info 级：用 warn 状态便于可见，但 severity 标记 info，规则元信息可让 CI 不阻断
+      return { status: 'warn', message: `${bad.length}/${blanks.length} 个 target="_blank" 缺少 rel="noopener"（现代浏览器已默认 noopener，仅建议显式声明）` };
     },
   },
 

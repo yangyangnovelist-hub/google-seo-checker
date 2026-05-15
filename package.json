@@ -1,0 +1,67 @@
+{
+  "name": "google-seo-checker",
+  "version": "0.1.0",
+  "description": "Page SEO checker grounded in 152 Google Search docs — 65 rules, every one cites the doc it derives from. Bundled with a keyword lookup over the docs.",
+  "type": "module",
+  "main": "./run.mjs",
+  "bin": {
+    "seo-check": "./cli.mjs",
+    "seo-lookup": "./lookup.mjs",
+    "seo-fetch-docs": "./fetch-docs.mjs"
+  },
+  "exports": {
+    ".": "./run.mjs",
+    "./rules": "./rules.mjs",
+    "./inspect": "./lib/inspect.mjs"
+  },
+  "files": [
+    "cli.mjs",
+    "lookup.mjs",
+    "fetch-docs.mjs",
+    "run.mjs",
+    "report.mjs",
+    "rules.mjs",
+    "lib/",
+    "docs/",
+    "sources.json",
+    "INDEX.md",
+    "SKILL.md",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "seo",
+    "google",
+    "seo-checker",
+    "schema",
+    "structured-data",
+    "core-web-vitals",
+    "robots-txt",
+    "sitemap",
+    "canonical",
+    "hreflang",
+    "claude-code",
+    "claude-code-skill"
+  ],
+  "license": "MIT",
+  "author": "Yang",
+  "homepage": "https://github.com/yangyangnovelist-hub/google-seo-checker#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangyangnovelist-hub/google-seo-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yangyangnovelist-hub/google-seo-checker/issues"
+  },
+  "scripts": {
+    "check": "node cli.mjs",
+    "lookup": "node lookup.mjs",
+    "fetch-docs": "node fetch-docs.mjs",
+    "test": "node test.mjs"
+  }
+}

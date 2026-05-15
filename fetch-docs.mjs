@@ -20,7 +20,7 @@ const DOCS_DIR = path.join(ROOT, 'docs');
 
 const CONCURRENCY = 6;
 const RETRIES = 3;
-const UA = 'Mozilla/5.0 (compatible; packoasis-seo-checker/1.0; +https://packoasis.com)';
+const UA = 'Mozilla/5.0 (compatible; google-seo-checker/0.1; +https://github.com/yangyangnovelist-hub/google-seo-checker)';
 
 function pathToSlug(p) {
   return p.replace(/^\//, '').replace(/\//g, '__') || 'index';

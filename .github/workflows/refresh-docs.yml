@@ -1,0 +1,45 @@
+name: refresh Google docs
+
+# Re-scrape developers.google.com/search/docs once a month and open a PR
+# if anything changed. Keeps the bundled docs/ from going stale.
+
+on:
+  schedule:
+    - cron: '17 4 1 * *'   # 04:17 UTC on the 1st of every month
+  workflow_dispatch:        # also runnable manually
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Force-refresh docs
+        run: node fetch-docs.mjs --force
+
+      - name: Smoke-test rules still load
+        run: node -e "import('./rules.mjs').then(m => { if (m.RULES.length < 30) throw new Error('rule count too low'); console.log(m.RULES.length, 'rules OK'); })"
+
+      - name: Open PR if changes
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'chore(docs): monthly refresh of Google Search docs'
+          title: 'chore(docs): monthly refresh of Google Search docs'
+          body: |
+            Automated monthly re-scrape of developers.google.com/search/docs.
+
+            Review the diff in `docs/` to see what Google changed.
+            If a doc's URL was removed upstream, `sources.json` needs manual update.
+          branch: bot/refresh-docs
+          delete-branch: true
+          add-paths: |
+            docs/
+            INDEX.md
