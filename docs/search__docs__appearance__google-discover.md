@@ -93,29 +93,29 @@ Google 探索中可能会显示的内容涵盖了符合用户兴趣的各种主�
 
 ### 获取支持
 
-  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community)
-  -  [ 向“咨询交流时间”活动提交问题 ](/search/help/office-hours)
-  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](/search/help/report-quality-issues)
-  -  [ 更多的支持资源 ](/search/help)
+  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community?hl=zh-cn)
+  -  [ 向“咨询交流时间”活动提交问题 ](https://developers.google.com/search/help/office-hours?hl=zh-cn)
+  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](https://developers.google.com/search/help/report-quality-issues?hl=zh-cn)
+  -  [ 更多的支持资源 ](https://developers.google.com/search/help?hl=zh-cn)
 
 -
 
 ### 资源
 
-  -  [ 您需要 SEO 吗？ ](/search/docs/fundamentals/get-on-google)
-  -  [ SEO 新手指南 ](/search/docs/fundamentals/seo-starter-guide)
-  -  [ 搜索系统的状态 ](https://status.search.google.com)
-  -  [ Search Console 文档 ](https://support.google.com/webmasters)
-  -  [ 案例研究 ](/search/case-studies/overview)
+  -  [ 您需要 SEO 吗？ ](https://developers.google.com/search/docs/fundamentals/get-on-google?hl=zh-cn)
+  -  [ SEO 新手指南 ](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=zh-cn)
+  -  [ 搜索系统的状态 ](https://status.search.google.com?hl=zh-cn)
+  -  [ Search Console 文档 ](https://support.google.com/webmasters?hl=zh-cn)
+  -  [ 案例研究 ](https://developers.google.com/search/case-studies/overview?hl=zh-cn)
 
 -
 
 ### 工具
 
-  -  [ Search Console ](https://search.google.com/search-console)
-  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results)
-  -  [ PageSpeed Insights ](https://pagespeed.web.dev)
-  -  [ AMP 测试 ](https://search.google.com/test/amp)
+  -  [ Search Console ](https://search.google.com/search-console?hl=zh-cn)
+  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results?hl=zh-cn)
+  -  [ PageSpeed Insights ](https://pagespeed.web.dev?hl=zh-cn)
+  -  [ AMP 测试 ](https://search.google.com/test/amp?hl=zh-cn)
 
   [](https://developers.google.com/?hl=zh-cn)
 

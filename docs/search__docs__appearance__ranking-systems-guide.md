@@ -77,7 +77,7 @@ path: /search/docs/appearance/ranking-systems-guide
  Google 的政策允许移除某些类型的内容。如果我们处理了涉及特定网站的大量此类移除要求，便将以此作为衡量因素来改进我们的搜索结果。尤其要注意：
 
 -  **依法移除：** 如果收到大量涉及特定网站的[有效版权内容移除要求](https://support.google.com/transparencyreport/answer/7347743?hl=zh-cn)，[我们会据此](https://search.googleblog.com/2012/08/an-update-to-our-search-algorithms.html)降低该网站中其他内容在搜索结果中的排名。这样，如果存在其他侵权内容，用户更可能看到原创内容，而非相应侵权内容。对于涉及诽谤、仿冒商品和法院命令移除的投诉，我们会采用类似的降位衡量因素。对于儿童性虐待内容 (CSAM)，我们一经发现即会将其移除，并会降低儿童性虐待内容 (CSAM) 占比非常高的网站中所有内容的排名。
--  **移除个人信息：** If we process a significant volume of personal information removals involving a site with [exploitative removal practices](https://support.google.com/websearch/answer/9172218?hl=zh-cn), we demote other content from the site in our results. [We also look to see](https://blog.google/products/search/improving-search-better-protect-people-harassment/?hl=zh-cn) if the same pattern of behavior is happening with other sites and, if so, apply demotions to content on those sites. We may apply similar demotion practices for sites that receive a significant volume of removals of content involving [doxxing content](https://support.google.com/websearch/answer/9673730?hl=zh-cn), [explicit personal imagery created or shared without consent](https://support.google.com/websearch/answer/6302812?hl=zh-cn), or [explicit non-consensual fake content](https://support.google.com/websearch/answer/9116649?hl=zh-cn).
+-  **移除个人信息：** 如果我们处理的大量个人信息移除要求涉及某个采用[有偿移除做法](https://support.google.com/websearch/answer/9172218?hl=zh-cn)的网站，我们会降低该网站中其他内容在搜索结果中的排名。[我们也会设法了解](https://blog.google/products/search/improving-search-better-protect-people-harassment/?hl=zh-cn)其他网站是否存在同类行为；如果有，则对此类网站上的内容采取降位措施。对于收到大量涉及[人肉搜索内容](https://support.google.com/websearch/answer/9673730?hl=zh-cn)、[未经当事人同意而制作或分享的露骨个人图像](https://support.google.com/websearch/answer/6302812?hl=zh-cn)或[未经当事人同意而发布的露骨虚假内容](https://support.google.com/websearch/answer/9116649?hl=zh-cn)的移除要求的网站，我们可能会采取类似的降位做法。
 
 ## 段落排名系统
 
@@ -148,29 +148,29 @@ path: /search/docs/appearance/ranking-systems-guide
 
 ### 获取支持
 
-  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community)
-  -  [ 向“咨询交流时间”活动提交问题 ](/search/help/office-hours)
-  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](/search/help/report-quality-issues)
-  -  [ 更多的支持资源 ](/search/help)
+  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community?hl=zh-cn)
+  -  [ 向“咨询交流时间”活动提交问题 ](https://developers.google.com/search/help/office-hours?hl=zh-cn)
+  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](https://developers.google.com/search/help/report-quality-issues?hl=zh-cn)
+  -  [ 更多的支持资源 ](https://developers.google.com/search/help?hl=zh-cn)
 
 -
 
 ### 资源
 
-  -  [ 您需要 SEO 吗？ ](/search/docs/fundamentals/get-on-google)
-  -  [ SEO 新手指南 ](/search/docs/fundamentals/seo-starter-guide)
-  -  [ 搜索系统的状态 ](https://status.search.google.com)
-  -  [ Search Console 文档 ](https://support.google.com/webmasters)
-  -  [ 案例研究 ](/search/case-studies/overview)
+  -  [ 您需要 SEO 吗？ ](https://developers.google.com/search/docs/fundamentals/get-on-google?hl=zh-cn)
+  -  [ SEO 新手指南 ](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=zh-cn)
+  -  [ 搜索系统的状态 ](https://status.search.google.com?hl=zh-cn)
+  -  [ Search Console 文档 ](https://support.google.com/webmasters?hl=zh-cn)
+  -  [ 案例研究 ](https://developers.google.com/search/case-studies/overview?hl=zh-cn)
 
 -
 
 ### 工具
 
-  -  [ Search Console ](https://search.google.com/search-console)
-  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results)
-  -  [ PageSpeed Insights ](https://pagespeed.web.dev)
-  -  [ AMP 测试 ](https://search.google.com/test/amp)
+  -  [ Search Console ](https://search.google.com/search-console?hl=zh-cn)
+  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results?hl=zh-cn)
+  -  [ PageSpeed Insights ](https://pagespeed.web.dev?hl=zh-cn)
+  -  [ AMP 测试 ](https://search.google.com/test/amp?hl=zh-cn)
 
   [](https://developers.google.com/?hl=zh-cn)
 

@@ -74,7 +74,7 @@ path: /search/docs/appearance/favicon-in-search
  **不受支持**：`https://example.com/news`（这是子目录级首页）
 -  Googlebot-Image 必须能够抓取网站图标文件，并且 Googlebot 必须能够抓取首页；它们不能被[禁止](https://developers.google.com/search/docs/crawling-indexing/control-what-you-share?hl=zh-cn)抓取。
 -  为便于用户在浏览搜索结果时快速识别您的网站，请确保网站图标的视觉设计能够代表您的网站品牌。
--  网站图标必须是方形（宽高比为 1:1），且尺寸至少为 8x8 像素。虽然最小尺寸要求为 8x8 像素，但我们建议使用尺寸大于 48x48 像素的网站图标，以便在各种平台上看起来效果不错。系统支持任何[有效的网站图标格式](https://en.wikipedia.org/wiki/Favicon#Image_file_format_support)。
+-  网站图标必须是方形（宽高比为 1:1），且尺寸至少为 8x8 像素。虽然最小尺寸要求为 8x8 像素，但我们建议使用尺寸大于 48x48 像素的网站图标，以便在各种平台上看起来效果不错。Google 搜索支持以下网站图标文件格式：BMP、GIF、ICO、PNG、JPEG、PPM 和 TIFF。
 - 网站图标网址必须保持稳定（请勿经常更改该网址）。
 -  Google 不会显示任何被其视为不当内容的网站图标，包括色情图像或有仇恨含义的符号（例如 卐）。如果在网站图标中发现了此类图像，则 Google 会将该网站图标替换为默认图标。
 
@@ -84,9 +84,9 @@ path: /search/docs/appearance/favicon-in-search
 
 如未另行说明，那么本页面中的内容已根据[知识共享署名 4.0 许可](https://creativecommons.org/licenses/by/4.0/)获得了许可，并且代码示例已根据 [Apache 2.0 许可](https://www.apache.org/licenses/LICENSE-2.0)获得了许可。有关详情，请参阅 [Google 开发者网站政策](https://developers.google.com/site-policies?hl=zh-cn)。Java 是 Oracle 和/或其关联公司的注册商标。
 
-最后更新时间 (UTC)：2026-02-20。
+最后更新时间 (UTC)：2026-09-11。
 
-     [[["易于理解","easyToUnderstand","thumb-up"],["解决了我的问题","solvedMyProblem","thumb-up"],["其他","otherUp","thumb-up"]],[["没有我需要的信息","missingTheInformationINeed","thumb-down"],["太复杂/步骤太多","tooComplicatedTooManySteps","thumb-down"],["内容需要更新","outOfDate","thumb-down"],["翻译问题","translationIssue","thumb-down"],["示例/代码问题","samplesCodeIssue","thumb-down"],["其他","otherDown","thumb-down"]],["最后更新时间 (UTC)：2026-02-20。"],[],["To show a favicon in Google Search results, create a square favicon (at least 8x8px, preferably \u003e48x48px) and add a `\u003clink\u003e` tag to your home page's header. Use `rel=\"icon\"` (or `shortcut icon`, `apple-touch-icon`, `apple-touch-icon-precomposed`) and `href` attributes with the favicon's URL. Ensure Googlebot-Image and Googlebot can crawl both the favicon and home page. Favicon must be appropriate and visually representative of the brand. Google supports one favicon per hostname.\n"]]
+     [[["易于理解","easyToUnderstand","thumb-up"],["解决了我的问题","solvedMyProblem","thumb-up"],["其他","otherUp","thumb-up"]],[["没有我需要的信息","missingTheInformationINeed","thumb-down"],["太复杂/步骤太多","tooComplicatedTooManySteps","thumb-down"],["内容需要更新","outOfDate","thumb-down"],["翻译问题","translationIssue","thumb-down"],["示例/代码问题","samplesCodeIssue","thumb-down"],["其他","otherDown","thumb-down"]],["最后更新时间 (UTC)：2026-09-11。"],[],["To show a favicon in Google Search results, create a square favicon (at least 8x8px, preferably \u003e48x48px) and add a `\u003clink\u003e` tag to your home page's header. Use `rel=\"icon\"` (or `shortcut icon`, `apple-touch-icon`, `apple-touch-icon-precomposed`) and `href` attributes with the favicon's URL. Ensure Googlebot-Image and Googlebot can crawl both the favicon and home page. Favicon must be appropriate and visually representative of the brand. Google supports one favicon per hostname.\n"]]
 
 -  [ LinkedIn  ](https://www.linkedin.com/showcase/googlesearchcentral/)
 在 LinkedIn 上加入我们
@@ -107,29 +107,29 @@ path: /search/docs/appearance/favicon-in-search
 
 ### 获取支持
 
-  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community)
-  -  [ 向“咨询交流时间”活动提交问题 ](/search/help/office-hours)
-  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](/search/help/report-quality-issues)
-  -  [ 更多的支持资源 ](/search/help)
+  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community?hl=zh-cn)
+  -  [ 向“咨询交流时间”活动提交问题 ](https://developers.google.com/search/help/office-hours?hl=zh-cn)
+  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](https://developers.google.com/search/help/report-quality-issues?hl=zh-cn)
+  -  [ 更多的支持资源 ](https://developers.google.com/search/help?hl=zh-cn)
 
 -
 
 ### 资源
 
-  -  [ 您需要 SEO 吗？ ](/search/docs/fundamentals/get-on-google)
-  -  [ SEO 新手指南 ](/search/docs/fundamentals/seo-starter-guide)
-  -  [ 搜索系统的状态 ](https://status.search.google.com)
-  -  [ Search Console 文档 ](https://support.google.com/webmasters)
-  -  [ 案例研究 ](/search/case-studies/overview)
+  -  [ 您需要 SEO 吗？ ](https://developers.google.com/search/docs/fundamentals/get-on-google?hl=zh-cn)
+  -  [ SEO 新手指南 ](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=zh-cn)
+  -  [ 搜索系统的状态 ](https://status.search.google.com?hl=zh-cn)
+  -  [ Search Console 文档 ](https://support.google.com/webmasters?hl=zh-cn)
+  -  [ 案例研究 ](https://developers.google.com/search/case-studies/overview?hl=zh-cn)
 
 -
 
 ### 工具
 
-  -  [ Search Console ](https://search.google.com/search-console)
-  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results)
-  -  [ PageSpeed Insights ](https://pagespeed.web.dev)
-  -  [ AMP 测试 ](https://search.google.com/test/amp)
+  -  [ Search Console ](https://search.google.com/search-console?hl=zh-cn)
+  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results?hl=zh-cn)
+  -  [ PageSpeed Insights ](https://pagespeed.web.dev?hl=zh-cn)
+  -  [ AMP 测试 ](https://search.google.com/test/amp?hl=zh-cn)
 
   [](https://developers.google.com/?hl=zh-cn)
 

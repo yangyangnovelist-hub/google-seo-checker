@@ -62,6 +62,7 @@ path: /search/docs/specialty/explicit/guidelines
 3. [允许 Googlebot 在抓取内容时不触发年龄限制](#allow-googlebot-to-crawl)
 4. [将包含露骨内容的网页归入单独的网域或子网域](#group-explicit-pages)。
 5. [使用元数据将特定网页标记为露骨网页](#mark-specific-pages)。
+6. [对于电商网站：在电子商务 Feed 或标记中为成人商品添加标签](#label-adult-products)。
 
 ### 防止您的平台上出现用户生成的有害内容
 
@@ -118,11 +119,15 @@ Google 同样会通过 `<meta name="rating" content="RTA-5042-1996-1400-1577-RTA
 
  如果您的网站上有各种各样的视频，包括适合所有年龄段的内容以及露骨色情内容或血腥暴力内容，请在视频站点地图中使用 [`<video:family_friendly>`](https://developers.google.com/search/docs/crawling-indexing/sitemaps/video-sitemaps?hl=zh-cn#family-friendly) 标记。您只需针对露骨视频使用此标记（设置为 `no`）。这有助于 Google 了解在启用安全搜索过滤功能时，您网站上的哪些视频不应显示。
 
+### 对于 Google 购物功能：在电子商务 Feed 或标记中为成人商品添加标签
+
+ 如果您正在优化商品详情，以便在 Google 购物功能中展示，并且根据 Google 的[成人内容政策](https://support.google.com/merchants/answer/12073010?hl=zh-cn#res)，您的商品被归类为成人用品，请在 Merchant Center Feed 中使用 [`adult` 属性](https://support.google.com/merchants/answer/6324508?hl=zh-cn)或 [`hasAdultConsideration`](https://developers.google.com/search/docs/appearance/structured-data/merchant-listing?hl=zh-cn#hasAdultConsideration) 结构化数据标记为这些商品添加标签。此标签不会影响您的网站在自然网页搜索结果中的曝光度。
+
 如未另行说明，那么本页面中的内容已根据[知识共享署名 4.0 许可](https://creativecommons.org/licenses/by/4.0/)获得了许可，并且代码示例已根据 [Apache 2.0 许可](https://www.apache.org/licenses/LICENSE-2.0)获得了许可。有关详情，请参阅 [Google 开发者网站政策](https://developers.google.com/site-policies?hl=zh-cn)。Java 是 Oracle 和/或其关联公司的注册商标。
 
-最后更新时间 (UTC)：2026-02-20。
+最后更新时间 (UTC)：2026-09-23。
 
-     [[["易于理解","easyToUnderstand","thumb-up"],["解决了我的问题","solvedMyProblem","thumb-up"],["其他","otherUp","thumb-up"]],[["没有我需要的信息","missingTheInformationINeed","thumb-down"],["太复杂/步骤太多","tooComplicatedTooManySteps","thumb-down"],["内容需要更新","outOfDate","thumb-down"],["翻译问题","translationIssue","thumb-down"],["示例/代码问题","samplesCodeIssue","thumb-down"],["其他","otherDown","thumb-down"]],["最后更新时间 (UTC)：2026-02-20。"],[],[]]
+     [[["易于理解","easyToUnderstand","thumb-up"],["解决了我的问题","solvedMyProblem","thumb-up"],["其他","otherUp","thumb-up"]],[["没有我需要的信息","missingTheInformationINeed","thumb-down"],["太复杂/步骤太多","tooComplicatedTooManySteps","thumb-down"],["内容需要更新","outOfDate","thumb-down"],["翻译问题","translationIssue","thumb-down"],["示例/代码问题","samplesCodeIssue","thumb-down"],["其他","otherDown","thumb-down"]],["最后更新时间 (UTC)：2026-09-23。"],[],[]]
 
 -  [ LinkedIn  ](https://www.linkedin.com/showcase/googlesearchcentral/)
 在 LinkedIn 上加入我们
@@ -143,29 +148,29 @@ Google 同样会通过 `<meta name="rating" content="RTA-5042-1996-1400-1577-RTA
 
 ### 获取支持
 
-  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community)
-  -  [ 向“咨询交流时间”活动提交问题 ](/search/help/office-hours)
-  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](/search/help/report-quality-issues)
-  -  [ 更多的支持资源 ](/search/help)
+  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community?hl=zh-cn)
+  -  [ 向“咨询交流时间”活动提交问题 ](https://developers.google.com/search/help/office-hours?hl=zh-cn)
+  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](https://developers.google.com/search/help/report-quality-issues?hl=zh-cn)
+  -  [ 更多的支持资源 ](https://developers.google.com/search/help?hl=zh-cn)
 
 -
 
 ### 资源
 
-  -  [ 您需要 SEO 吗？ ](/search/docs/fundamentals/get-on-google)
-  -  [ SEO 新手指南 ](/search/docs/fundamentals/seo-starter-guide)
-  -  [ 搜索系统的状态 ](https://status.search.google.com)
-  -  [ Search Console 文档 ](https://support.google.com/webmasters)
-  -  [ 案例研究 ](/search/case-studies/overview)
+  -  [ 您需要 SEO 吗？ ](https://developers.google.com/search/docs/fundamentals/get-on-google?hl=zh-cn)
+  -  [ SEO 新手指南 ](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=zh-cn)
+  -  [ 搜索系统的状态 ](https://status.search.google.com?hl=zh-cn)
+  -  [ Search Console 文档 ](https://support.google.com/webmasters?hl=zh-cn)
+  -  [ 案例研究 ](https://developers.google.com/search/case-studies/overview?hl=zh-cn)
 
 -
 
 ### 工具
 
-  -  [ Search Console ](https://search.google.com/search-console)
-  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results)
-  -  [ PageSpeed Insights ](https://pagespeed.web.dev)
-  -  [ AMP 测试 ](https://search.google.com/test/amp)
+  -  [ Search Console ](https://search.google.com/search-console?hl=zh-cn)
+  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results?hl=zh-cn)
+  -  [ PageSpeed Insights ](https://pagespeed.web.dev?hl=zh-cn)
+  -  [ AMP 测试 ](https://search.google.com/test/amp?hl=zh-cn)
 
   [](https://developers.google.com/?hl=zh-cn)
 

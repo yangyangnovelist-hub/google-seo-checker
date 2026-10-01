@@ -42,7 +42,8 @@ path: /search/docs/appearance/page-experience
 -  [Search Console 的 HTTPS 报告](https://support.google.com/webmasters/answer/11396518?hl=zh-cn)：检查您是否提供安全的 HTTPS 网页，以及如果未提供的话，要修正哪些错误。
 -  [检查网站连接是否安全](https://support.google.com/chrome/answer/95617?hl=zh-cn)：了解如何根据 Chrome 的报告检查网站连接是否安全。 如果网页没有采用 HTTPS 协议，请了解如何[使用 HTTPS 确保网站安全](https://web.dev/articles/enable-https?hl=zh-cn)。
 -  [避免使用干扰性插页式广告和对话框](https://developers.google.com/search/docs/appearance/avoid-intrusive-interstitials?hl=zh-cn)：了解如何避免使用会导致内容不易访问的插页式广告。
--  [Chrome Lighthouse：](https://developer.chrome.com/docs/lighthouse/overview?hl=zh-cn)Chrome 中的此工具集可帮助您确定与网页体验相关的一系列改进，包括在移动设备上的易用性。
+-  [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview?hl=zh-cn)：Chrome 中的此工具集可帮助您确定与网页体验相关的一系列改进，包括在移动设备上的易用性。
+-  [CrUX 广告指标](https://developer.chrome.com/docs/ads?hl=zh-cn)：这些来自 Chrome 的实验性 CrUX 指标可帮助您了解网站的广告数量、广告密度和广告权重指标。它们可让您深入了解真实用户在您网站上的广告体验，这些体验由 Chrome 观察并报告。
 
 ## 常见问题解答
 
@@ -70,9 +71,9 @@ path: /search/docs/appearance/page-experience
 
 如未另行说明，那么本页面中的内容已根据[知识共享署名 4.0 许可](https://creativecommons.org/licenses/by/4.0/)获得了许可，并且代码示例已根据 [Apache 2.0 许可](https://www.apache.org/licenses/LICENSE-2.0)获得了许可。有关详情，请参阅 [Google 开发者网站政策](https://developers.google.com/site-policies?hl=zh-cn)。Java 是 Oracle 和/或其关联公司的注册商标。
 
-最后更新时间 (UTC)：2025-12-18。
+最后更新时间 (UTC)：2026-09-25。
 
-     [[["易于理解","easyToUnderstand","thumb-up"],["解决了我的问题","solvedMyProblem","thumb-up"],["其他","otherUp","thumb-up"]],[["没有我需要的信息","missingTheInformationINeed","thumb-down"],["太复杂/步骤太多","tooComplicatedTooManySteps","thumb-down"],["内容需要更新","outOfDate","thumb-down"],["翻译问题","translationIssue","thumb-down"],["示例/代码问题","samplesCodeIssue","thumb-down"],["其他","otherDown","thumb-down"]],["最后更新时间 (UTC)：2025-12-18。"],[],["Google's core ranking systems reward content with a good page experience, considering multiple aspects, not just one. Assess if your pages have good Core Web Vitals, are secure (HTTPS), mobile-friendly, avoid excessive ads or intrusive interstitials, and clearly distinguish main content. While there's no single ranking signal, Core Web Vitals and other page experience factors influence rankings. Page experience is evaluated per page. Google prioritizes relevant content, but good page experience enhances success, especially when many relevant options exist.\n"]]
+     [[["易于理解","easyToUnderstand","thumb-up"],["解决了我的问题","solvedMyProblem","thumb-up"],["其他","otherUp","thumb-up"]],[["没有我需要的信息","missingTheInformationINeed","thumb-down"],["太复杂/步骤太多","tooComplicatedTooManySteps","thumb-down"],["内容需要更新","outOfDate","thumb-down"],["翻译问题","translationIssue","thumb-down"],["示例/代码问题","samplesCodeIssue","thumb-down"],["其他","otherDown","thumb-down"]],["最后更新时间 (UTC)：2026-09-25。"],[],["Google's core ranking systems reward content with a good page experience, considering multiple aspects, not just one. Assess if your pages have good Core Web Vitals, are secure (HTTPS), mobile-friendly, avoid excessive ads or intrusive interstitials, and clearly distinguish main content. While there's no single ranking signal, Core Web Vitals and other page experience factors influence rankings. Page experience is evaluated per page. Google prioritizes relevant content, but good page experience enhances success, especially when many relevant options exist.\n"]]
 
 -  [ LinkedIn  ](https://www.linkedin.com/showcase/googlesearchcentral/)
 在 LinkedIn 上加入我们
@@ -93,29 +94,29 @@ path: /search/docs/appearance/page-experience
 
 ### 获取支持
 
-  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community)
-  -  [ 向“咨询交流时间”活动提交问题 ](/search/help/office-hours)
-  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](/search/help/report-quality-issues)
-  -  [ 更多的支持资源 ](/search/help)
+  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community?hl=zh-cn)
+  -  [ 向“咨询交流时间”活动提交问题 ](https://developers.google.com/search/help/office-hours?hl=zh-cn)
+  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](https://developers.google.com/search/help/report-quality-issues?hl=zh-cn)
+  -  [ 更多的支持资源 ](https://developers.google.com/search/help?hl=zh-cn)
 
 -
 
 ### 资源
 
-  -  [ 您需要 SEO 吗？ ](/search/docs/fundamentals/get-on-google)
-  -  [ SEO 新手指南 ](/search/docs/fundamentals/seo-starter-guide)
-  -  [ 搜索系统的状态 ](https://status.search.google.com)
-  -  [ Search Console 文档 ](https://support.google.com/webmasters)
-  -  [ 案例研究 ](/search/case-studies/overview)
+  -  [ 您需要 SEO 吗？ ](https://developers.google.com/search/docs/fundamentals/get-on-google?hl=zh-cn)
+  -  [ SEO 新手指南 ](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=zh-cn)
+  -  [ 搜索系统的状态 ](https://status.search.google.com?hl=zh-cn)
+  -  [ Search Console 文档 ](https://support.google.com/webmasters?hl=zh-cn)
+  -  [ 案例研究 ](https://developers.google.com/search/case-studies/overview?hl=zh-cn)
 
 -
 
 ### 工具
 
-  -  [ Search Console ](https://search.google.com/search-console)
-  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results)
-  -  [ PageSpeed Insights ](https://pagespeed.web.dev)
-  -  [ AMP 测试 ](https://search.google.com/test/amp)
+  -  [ Search Console ](https://search.google.com/search-console?hl=zh-cn)
+  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results?hl=zh-cn)
+  -  [ PageSpeed Insights ](https://pagespeed.web.dev?hl=zh-cn)
+  -  [ AMP 测试 ](https://search.google.com/test/amp?hl=zh-cn)
 
   [](https://developers.google.com/?hl=zh-cn)
 
@@ -133,10 +134,19 @@ path: /search/docs/appearance/page-experience
 -  [English]()
 -  [Deutsch]()
 -  [Español]()
+-  [Español – América Latina]()
 -  [Français]()
 -  [Indonesia]()
+-  [Italiano]()
+-  [Polski]()
 -  [Português – Brasil]()
+-  [Tiếng Việt]()
+-  [Türkçe]()
 -  [Русский]()
+-  [العربيّة]()
+-  [हिंदी]()
+-  [ภาษาไทย]()
 -  [中文 – 简体]()
+-  [中文 – 繁體]()
 -  [日本語]()
 -  [한국어]()

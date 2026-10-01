@@ -48,6 +48,7 @@ path: /search/docs/crawling-indexing/consolidate-duplicate-urls
 -  **请勿**使用网址移除工具进行规范化，它会在搜索结果中隐藏网址的所有版本。**
 -  **请勿**使用不同的规范化方法为同一网页指定不同的规范网址（例如，请勿既在站点地图中为某个网页指定一个规范网址，又使用 `rel="canonical"` 为同一网页另行指定一个规范网址）。
 -  **请勿**将网址片段指定为规范网址，因为 [Google 通常不支持网址片段](https://developers.google.com/search/docs/crawling-indexing/url-structure?hl=zh-cn#fragments)。
+-  **请务必**在规范网页本身上添加 `rel="canonical"` 链接（也称为自引用规范）。
 -  **我们不建议**使用 [`noindex`](https://developers.google.com/search/docs/crawling-indexing/block-indexing?hl=zh-cn) 阻止选择单个网站中的规范网页，因为这样会完全阻止该网页显示在 Google 搜索结果中。`rel="canonical"``link` 注释是首选解决方案。
 -  如果您使用的是 [`hreflang` 元素](https://developers.google.com/search/docs/specialty/international/localized-versions?hl=zh-cn)，请务必指定一个采用同一语言的规范网页；如果没有这样的规范网页，请指定一个采用最佳替代语言的规范网页。
 -  在网站中提供链接时，请链接到规范网址（而非重复网址）。 始终链接到您认定的规范网址有助于 Google 了解您偏好的网址。
@@ -134,6 +135,8 @@ path: /search/docs/crawling-indexing/consolidate-duplicate-urls
 </head>
 <!-- rest of the HTML -->
 ```
+
+我们建议您也向规范网页本身添加此自引用 `rel="canonical"` link 元素。
 
 2.  如果规范网页有采用不同网址的移动版变体，请为其添加 `rel="alternate"``link` 元素，并使该链接指向此网页的移动版：
 
@@ -231,9 +234,9 @@ Content-Length: 19
 
 如未另行说明，那么本页面中的内容已根据[知识共享署名 4.0 许可](https://creativecommons.org/licenses/by/4.0/)获得了许可，并且代码示例已根据 [Apache 2.0 许可](https://www.apache.org/licenses/LICENSE-2.0)获得了许可。有关详情，请参阅 [Google 开发者网站政策](https://developers.google.com/site-policies?hl=zh-cn)。Java 是 Oracle 和/或其关联公司的注册商标。
 
-最后更新时间 (UTC)：2026-03-31。
+最后更新时间 (UTC)：2026-07-15。
 
-     [[["易于理解","easyToUnderstand","thumb-up"],["解决了我的问题","solvedMyProblem","thumb-up"],["其他","otherUp","thumb-up"]],[["没有我需要的信息","missingTheInformationINeed","thumb-down"],["太复杂/步骤太多","tooComplicatedTooManySteps","thumb-down"],["内容需要更新","outOfDate","thumb-down"],["翻译问题","translationIssue","thumb-down"],["示例/代码问题","samplesCodeIssue","thumb-down"],["其他","otherDown","thumb-down"]],["最后更新时间 (UTC)：2026-03-31。"],[],["Canonical URLs are specified through redirects, `rel=\"canonical\"` link elements or HTTP headers, or sitemap inclusion. Redirects are strongest, used for deprecation; `rel=\"canonical\"` methods are strong signals for HTML or non-HTML files respectively. Sitemaps are a weaker signal. Use consistent absolute URLs, avoid `robots.txt` and `noindex`. Multiple methods can be used for stronger signaling. For HTTPS and HTTP variations, redirect from HTTP to HTTPS and ensure correct certificate usage. Prefer HTTPS versions in sitemaps and `hreflang` implementation.\n"]]
+     [[["易于理解","easyToUnderstand","thumb-up"],["解决了我的问题","solvedMyProblem","thumb-up"],["其他","otherUp","thumb-up"]],[["没有我需要的信息","missingTheInformationINeed","thumb-down"],["太复杂/步骤太多","tooComplicatedTooManySteps","thumb-down"],["内容需要更新","outOfDate","thumb-down"],["翻译问题","translationIssue","thumb-down"],["示例/代码问题","samplesCodeIssue","thumb-down"],["其他","otherDown","thumb-down"]],["最后更新时间 (UTC)：2026-07-15。"],[],["Canonical URLs are specified through redirects, `rel=\"canonical\"` link elements or HTTP headers, or sitemap inclusion. Redirects are strongest, used for deprecation; `rel=\"canonical\"` methods are strong signals for HTML or non-HTML files respectively. Sitemaps are a weaker signal. Use consistent absolute URLs, avoid `robots.txt` and `noindex`. Multiple methods can be used for stronger signaling. For HTTPS and HTTP variations, redirect from HTTP to HTTPS and ensure correct certificate usage. Prefer HTTPS versions in sitemaps and `hreflang` implementation.\n"]]
 
 -  [ LinkedIn  ](https://www.linkedin.com/showcase/googlesearchcentral/)
 在 LinkedIn 上加入我们
@@ -254,29 +257,29 @@ Content-Length: 19
 
 ### 获取支持
 
-  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community)
-  -  [ 向“咨询交流时间”活动提交问题 ](/search/help/office-hours)
-  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](/search/help/report-quality-issues)
-  -  [ 更多的支持资源 ](/search/help)
+  -  [ 转到帮助论坛 ](https://support.google.com/webmasters/community?hl=zh-cn)
+  -  [ 向“咨询交流时间”活动提交问题 ](https://developers.google.com/search/help/office-hours?hl=zh-cn)
+  -  [ 举报垃圾内容、钓鱼式攻击内容或恶意软件 ](https://developers.google.com/search/help/report-quality-issues?hl=zh-cn)
+  -  [ 更多的支持资源 ](https://developers.google.com/search/help?hl=zh-cn)
 
 -
 
 ### 资源
 
-  -  [ 您需要 SEO 吗？ ](/search/docs/fundamentals/get-on-google)
-  -  [ SEO 新手指南 ](/search/docs/fundamentals/seo-starter-guide)
-  -  [ 搜索系统的状态 ](https://status.search.google.com)
-  -  [ Search Console 文档 ](https://support.google.com/webmasters)
-  -  [ 案例研究 ](/search/case-studies/overview)
+  -  [ 您需要 SEO 吗？ ](https://developers.google.com/search/docs/fundamentals/get-on-google?hl=zh-cn)
+  -  [ SEO 新手指南 ](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=zh-cn)
+  -  [ 搜索系统的状态 ](https://status.search.google.com?hl=zh-cn)
+  -  [ Search Console 文档 ](https://support.google.com/webmasters?hl=zh-cn)
+  -  [ 案例研究 ](https://developers.google.com/search/case-studies/overview?hl=zh-cn)
 
 -
 
 ### 工具
 
-  -  [ Search Console ](https://search.google.com/search-console)
-  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results)
-  -  [ PageSpeed Insights ](https://pagespeed.web.dev)
-  -  [ AMP 测试 ](https://search.google.com/test/amp)
+  -  [ Search Console ](https://search.google.com/search-console?hl=zh-cn)
+  -  [ 富媒体搜索结果测试 ](https://search.google.com/test/rich-results?hl=zh-cn)
+  -  [ PageSpeed Insights ](https://pagespeed.web.dev?hl=zh-cn)
+  -  [ AMP 测试 ](https://search.google.com/test/amp?hl=zh-cn)
 
   [](https://developers.google.com/?hl=zh-cn)
 
